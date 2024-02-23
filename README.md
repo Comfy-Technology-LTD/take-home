@@ -1,6 +1,3 @@
-Certainly! Here's a structured README markup for your project:
-
-```markdown
 # Reinsurance Broking Platform - ReactJS Application
 
 ## Objectives
@@ -44,6 +41,3 @@ Include a detailed README for setup instructions, task overview, and project str
 - Check for effective error handling and consideration of edge cases.
 - Inspect Git commit history for incremental development.
 - Evaluate README completeness and clarity in providing setup instructions and project overview.
-```
-
-Feel free to customize the content according to your specific details and preferences.
