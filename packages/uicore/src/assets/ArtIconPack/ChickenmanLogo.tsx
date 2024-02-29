@@ -1,4 +1,4 @@
-import { SVGAttributes } from "react"
+import { SVGAttributes } from "react";
 
 export const ChickenmanLogo = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (

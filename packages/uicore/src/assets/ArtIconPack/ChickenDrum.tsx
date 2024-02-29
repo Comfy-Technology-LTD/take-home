@@ -1,6 +1,4 @@
-
-
-import { SVGAttributes } from "react"
+import { SVGAttributes } from "react";
 
 export const ChickenDrum = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (

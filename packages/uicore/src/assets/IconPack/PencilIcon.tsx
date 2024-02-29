@@ -1,5 +1,5 @@
+import { SVGAttributes } from "react";
 
-import { SVGAttributes } from "react"
 export const PencilIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg

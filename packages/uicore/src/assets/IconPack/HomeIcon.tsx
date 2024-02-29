@@ -1,6 +1,4 @@
-
-
-import { SVGAttributes } from "react"
+import { SVGAttributes } from "react";
 
 export const HomeIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (

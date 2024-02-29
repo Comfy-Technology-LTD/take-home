@@ -1,5 +1,4 @@
-
-import { SVGAttributes } from "react"
+import { SVGAttributes } from "react";
 
 export const GlobeIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (

@@ -1,4 +1,4 @@
-import { SVGAttributes } from "react"
+import { SVGAttributes } from "react";
 
 export const UploadIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (

@@ -1,5 +1,4 @@
-
-import { SVGAttributes } from "react"
+import { SVGAttributes } from "react";
 
 export const CheckIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (

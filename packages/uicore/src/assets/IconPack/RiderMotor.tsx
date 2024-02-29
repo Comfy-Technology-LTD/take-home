@@ -1,5 +1,4 @@
-
-import { SVGAttributes } from "react"
+import { SVGAttributes } from "react";
 
 export const RiderMotor = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
