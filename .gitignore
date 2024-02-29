@@ -1,0 +1,15 @@
+node_modules
+
+storybook-static
+
+.turbo
+
+dist
+
+yarn.lock
+yarn-error.log
+.env
+
++ build/**
++ dist/**
++ .next/**

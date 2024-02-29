@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+  :root {
+    --okw-brand-black: 0 0 0;
+    --okw-brand-purple: 195 0 176;
+    --okw-brand-green: 62 255 81;
+
+    --okw-color-primary: 0 0 0;
+    --okw-color-secondary: 195 0 176;
+    --okw-color-error: 255 62 62;
+    --okw-color-success: 62 255 81;
+    --okw-color-disabled: 208 208 208;
+
+    /* attention colors */
+    --okw-success-color: #569046;
+    --okw-success-bg-color: #e0f7df;
+    --okw-info-color: #948043;
+    --okw-info-bg-color: #fcf5db;
+    --okw-error-color: #972f38;
+    --okw-error-bg-color: #f4d6d6;
+
+    /* dark colors*/
+    --okw-dark-text-color1: 55 55 55;
+    --okw-dark-text-color2: 100 100 100;
+
+    /* Light colors*/
+    --okw-light-text-color1: 255 255 255;
+    --okw-light-text-color2: 193 193 193;
+  }
+}
+
+@layer components {
+  .bgColor {
+    @apply;
+  }
+  .coverBgColor {
+    @apply;
+  }
+  .deepTextColor {
+    @apply;
+  }
+  .lightTextColor {
+    @apply;
+  }
+  .lighterTextColor {
+    @apply;
+  }
+}

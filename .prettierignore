@@ -1,0 +1,9 @@
+.yarn
+dist
+node_modules
+*.html
+*.md
+.next
+*.config.ts
+*.config.js
+*.json

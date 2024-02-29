@@ -1,0 +1,43 @@
+.themeRed {
+  --okw-button-light-accent-color2: var(--okw-red-light-accent-color2);
+  --okw-button-accent-color: var(--okw-red-accent-color);
+}
+
+.themeGreen {
+  --okw-button-light-accent-color2: var(--okw-green-light-accent-color2);
+  --okw-button-accent-color: var(--okw-green-accent-color);
+}
+
+.themeYellow {
+  --okw-button-light-accent-color2: var(--okw-yellow-light-accent-color2);
+  --okw-button-accent-color: var(--okw-yellow-accent-color);
+}
+
+.root {
+  padding: 15px 18px;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid var(--okw-dark-border-color2);
+  background-color: rgba(255, 255, 255, 0.47);
+  border-radius: 50px;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  -webkit-user-select: text;
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 16px;
+}
+
+.root:focus {
+  border: 1px solid var(--okw-button-accent-color);
+  box-shadow: 0px 0px 0px 3px var(--okw-button-light-accent-color2);
+  -webkit-box-shadow: 0px 0px 0px 3px var(--okw-button-light-accent-color2);
+  -moz-box-shadow: 0px 0px 0px 3px var(--okw-button-light-accent-color2);
+}
+
+.isFullwidth {
+  width: 100%;
+}
