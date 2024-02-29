@@ -35,11 +35,5 @@ export default defineConfig({
         ],
       },
     }),
-  ],
-  optimizeDeps: {
-    include: ["uicore"],
-    esbuildOptions: {
-      jsx: "automatic",
-    },
-  },
+  ]
 });

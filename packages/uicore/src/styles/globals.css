@@ -29,23 +29,49 @@
     /* Light colors*/
     --okw-light-text-color1: 255 255 255;
     --okw-light-text-color2: 193 193 193;
+
+    --okw-black-light-accent-color2: #00000069;
+    --okw-black-accent-color: #000000;
+
+    --okw-purple-light-accent-color2: #c300b063;
+    --okw-purple-accent-color: #C300B0;
+
+    --okw-green-light-accent-color2: #3eff516d;
+    --okw-green-accent-color: #3EFF51;
+
+    /* Border sizes */
+    --okw-border-radius-lg: 30px;
+    --okw-border-radius-md: 20px;
+    --okw-border-radius-sm: 15px;
+    --okw-border-radius-vsm: 10px;
+    --okw-border-radius-rd: 50%;
+
+  /*  */
+   
+
   }
 }
 
 @layer components {
   .bgColor {
-    @apply;
+    @apply bg-white dark:black
   }
+
   .coverBgColor {
-    @apply;
+    @apply bg-gray
   }
+
   .deepTextColor {
-    @apply;
+    @apply text-black dark:text-white
   }
+
+  /* 
   .lightTextColor {
     @apply;
   }
+  */
   .lighterTextColor {
-    @apply;
+    @apply text-gray-300
   }
+
 }

@@ -5,6 +5,12 @@ module.exports = {
     './*.{html,js,ts,jsx}'
   ],
   theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -13,8 +19,7 @@ module.exports = {
       success: 'rgb(var(--okw-color-success) / <alpha-value>)',
       error: 'rgb(var(--okw-color-error) / <alpha-value>)',
       disabled: 'rgb(var(--okw-color-disabled) / <alpha-value>)',
-    },
-    gray: {
+      gray: {
         100: '#f3f4f6',
         200: '#e5e7eb',
         300: '#d1d5db',
@@ -25,12 +30,21 @@ module.exports = {
         800: '#111827',
         900: '#030712',
       },
+      darkText: "#030712",
+      lightText: "#f3f4f6"
+    },
    extend: {
       borderRadius: {
-        "lg": "30px",
-        "md": "20px",
-        "sm": "15px",
-        "vsm": "10px"
+        "lg": "var(--okw-border-radius-lg)",
+        "md": "var(--okw-border-radius-md)",
+        "sm": "var(--okw-border-radius-sm)",
+        "vsm": "var(--okw-border-radius-vsm)",
+        "rd": "var(--okw-border-radius-rd)",
+      },
+      borderColor: {
+        "dark": "#030712",
+        "light": "#f3f4f6",
+        "gray": "#9ca3af",
       }
     }
   },

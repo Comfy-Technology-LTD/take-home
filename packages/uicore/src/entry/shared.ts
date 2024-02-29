@@ -5,3 +5,5 @@ export * from "../assets/IconPack";
 export * from "../assets/ArtIconPack";
 
 export * from "../lib";
+
+import "../styles/globals.css"
