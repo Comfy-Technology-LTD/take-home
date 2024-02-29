@@ -1,4 +1,6 @@
-export const WhatsAppIcon = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const WhatsAppIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="39" height="33" viewBox="0 0 39 33" fill="none">
       <path

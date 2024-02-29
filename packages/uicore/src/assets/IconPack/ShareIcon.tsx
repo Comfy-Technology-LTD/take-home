@@ -1,4 +1,6 @@
-export const ShareIcon = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const ShareIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

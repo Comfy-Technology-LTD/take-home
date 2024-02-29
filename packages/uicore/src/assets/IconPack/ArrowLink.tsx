@@ -1,4 +1,7 @@
-export const ArrowLink = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+
+export const ArrowLink = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

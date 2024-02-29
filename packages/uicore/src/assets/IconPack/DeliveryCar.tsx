@@ -1,4 +1,7 @@
-export const DeliveryCar = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const DeliveryCar = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width="1em"

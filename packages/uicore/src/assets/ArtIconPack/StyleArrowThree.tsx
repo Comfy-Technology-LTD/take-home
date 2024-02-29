@@ -1,4 +1,7 @@
-export const StyleArrowThree = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const StyleArrowThree = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width="1em"

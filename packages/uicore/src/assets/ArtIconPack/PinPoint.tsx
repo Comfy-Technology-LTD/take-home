@@ -1,4 +1,7 @@
-export const PinPoint = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+
+export const PinPoint = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

@@ -1,4 +1,7 @@
-export const SearchIcon = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const SearchIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

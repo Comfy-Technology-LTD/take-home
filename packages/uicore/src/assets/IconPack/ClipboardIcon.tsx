@@ -1,4 +1,7 @@
-export const ClipboardIcon = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const ClipboardIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width="1em"

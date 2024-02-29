@@ -1,4 +1,6 @@
-export const ViewGridIcon = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const ViewGridIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <>
       <svg

@@ -1,4 +1,6 @@
-export const ChrisBackground = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const ChrisBackground = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

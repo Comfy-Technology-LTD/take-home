@@ -1,4 +1,7 @@
-export const DeliveryMotor = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const DeliveryMotor = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

@@ -1,4 +1,6 @@
-export const Telephone = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const Telephone = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

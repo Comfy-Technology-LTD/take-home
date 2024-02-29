@@ -1,4 +1,6 @@
-export const PuzzleLogo = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const PuzzleLogo = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width={"1em"}

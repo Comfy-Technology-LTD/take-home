@@ -1,4 +1,6 @@
-export const TemplateIcon = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const TemplateIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

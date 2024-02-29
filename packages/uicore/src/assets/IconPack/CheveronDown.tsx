@@ -1,4 +1,7 @@
-export const CheveronDown = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const CheveronDown = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

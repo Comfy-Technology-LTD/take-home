@@ -1,4 +1,7 @@
-export const LogOut = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const LogOut = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

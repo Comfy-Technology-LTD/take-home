@@ -1,4 +1,6 @@
-export const TruckIcon = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const TruckIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width="1em"

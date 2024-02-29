@@ -1,4 +1,6 @@
-export const ChickenmanLogo = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const ChickenmanLogo = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width={"1em"}

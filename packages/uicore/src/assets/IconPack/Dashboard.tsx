@@ -1,6 +1,7 @@
-// import React from 'react'
 
-export const Dashboard = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const Dashboard = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

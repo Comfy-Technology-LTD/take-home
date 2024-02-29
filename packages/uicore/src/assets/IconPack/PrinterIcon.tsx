@@ -1,4 +1,7 @@
-export const PrinterIcon = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const PrinterIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

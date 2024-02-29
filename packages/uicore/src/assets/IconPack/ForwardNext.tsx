@@ -1,4 +1,7 @@
-export const ForwardNext = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const ForwardNext = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

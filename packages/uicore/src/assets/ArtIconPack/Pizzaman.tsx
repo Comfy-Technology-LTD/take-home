@@ -1,4 +1,7 @@
-export const Pizzaman = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const Pizzaman = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width={"1em"}

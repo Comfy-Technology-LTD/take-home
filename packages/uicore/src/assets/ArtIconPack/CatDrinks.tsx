@@ -1,4 +1,6 @@
-export const CatDrinks = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const CatDrinks = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

@@ -1,4 +1,6 @@
-export const ToggleColumnIcon = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const ToggleColumnIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

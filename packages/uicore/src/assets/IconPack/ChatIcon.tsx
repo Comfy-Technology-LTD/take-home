@@ -1,4 +1,7 @@
-export const ChatIcon = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const ChatIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width="1em"

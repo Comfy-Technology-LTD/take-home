@@ -1,4 +1,6 @@
-export const Android = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const Android = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

@@ -1,4 +1,6 @@
-export const SwitchHorinIcon = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const SwitchHorinIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

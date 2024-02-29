@@ -1,4 +1,7 @@
-export const EditIcon = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const EditIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

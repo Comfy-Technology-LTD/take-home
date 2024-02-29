@@ -1,4 +1,6 @@
-export const AvartarHolder = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const AvartarHolder = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width="1em"

@@ -1,4 +1,7 @@
-export const BoxOpenIcon = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const BoxOpenIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

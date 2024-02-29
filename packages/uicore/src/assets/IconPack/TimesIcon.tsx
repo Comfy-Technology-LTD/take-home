@@ -1,4 +1,6 @@
-export const TimesIcon = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const TimesIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width="1em"

@@ -1,4 +1,7 @@
-export const MinusIcon = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const MinusIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

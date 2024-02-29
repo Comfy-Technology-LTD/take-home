@@ -21,7 +21,16 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "prepare": "husky",
-    "turbo": "turbo run typecheck format lint"
+    "turbo": "turbo run typecheck format lint",
+    "turbo:tsc": "turbo run typecheck",
+    "turbo:lint": "turbo run lint",
+    "turbo:format": "turbo run format",
+    "turbo:dev": "turbo run dev",
+    "up:tsc": "yarn workspace uipreview run typecheck",
+		"ad:tsc": "yarn workspace admin run typecheck",
+		"ui:tsc": "yarn workspace uicore run typecheck",
+    "up:dev": "yarn workspace uipreview run dev",
+		"ad:dev": "yarn workspace admin run dev"
   },
   "workspaces": [
     "apps/*",

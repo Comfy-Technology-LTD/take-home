@@ -1,4 +1,6 @@
-export const ShopBagOne = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const ShopBagOne = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width="1em"

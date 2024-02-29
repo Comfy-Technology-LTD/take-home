@@ -1,4 +1,8 @@
-export const ChartBarIcon = ({ ...props }) => {
+
+
+import { SVGAttributes } from "react"
+
+export const ChartBarIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

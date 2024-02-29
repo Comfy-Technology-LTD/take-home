@@ -23,4 +23,4 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Typecheck
-        run: yarn typecheck
+        run: yarn turbo:tsc

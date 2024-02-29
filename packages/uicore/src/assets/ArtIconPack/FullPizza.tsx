@@ -1,4 +1,6 @@
-export const FullPizza = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const FullPizza = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

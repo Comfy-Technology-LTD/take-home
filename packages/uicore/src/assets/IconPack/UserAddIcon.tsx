@@ -1,4 +1,6 @@
-export const UserAddIcon = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const UserAddIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width="1em"

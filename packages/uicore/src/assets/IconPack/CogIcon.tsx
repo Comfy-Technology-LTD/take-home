@@ -1,4 +1,7 @@
-export const CogIcon = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const CogIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width="1em"

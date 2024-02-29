@@ -1,4 +1,6 @@
-export const EmptyBox = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const EmptyBox = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

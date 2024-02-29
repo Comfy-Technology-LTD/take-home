@@ -1,4 +1,8 @@
-export const EllipsisVertIcon = ({ ...props }) => {
+
+
+import { SVGAttributes } from "react"
+
+export const EllipsisVertIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

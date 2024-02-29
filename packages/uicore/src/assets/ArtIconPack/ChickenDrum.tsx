@@ -1,4 +1,8 @@
-export const ChickenDrum = ({ ...props }) => {
+
+
+import { SVGAttributes } from "react"
+
+export const ChickenDrum = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

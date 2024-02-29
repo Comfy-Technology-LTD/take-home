@@ -1,4 +1,6 @@
-export const TestIcon = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const TestIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <>
       <svg

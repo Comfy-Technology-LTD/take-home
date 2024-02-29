@@ -1,4 +1,7 @@
-export const ErrorIcon = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const ErrorIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width="1em"

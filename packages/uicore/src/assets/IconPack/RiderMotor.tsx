@@ -1,4 +1,7 @@
-export const RiderMotor = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const RiderMotor = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

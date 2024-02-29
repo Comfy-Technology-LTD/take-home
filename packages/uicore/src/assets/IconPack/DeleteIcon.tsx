@@ -1,4 +1,7 @@
-export const DeleteIcon = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const DeleteIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

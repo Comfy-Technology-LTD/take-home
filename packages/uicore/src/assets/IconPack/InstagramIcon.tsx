@@ -1,6 +1,7 @@
-// import React from 'react'
 
-export const InstagramIcon = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const InstagramIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="38" height="33" viewBox="0 0 38 33" fill="none">
       <path

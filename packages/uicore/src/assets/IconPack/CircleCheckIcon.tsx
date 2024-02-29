@@ -1,4 +1,7 @@
-export const CircleCheckIcon = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const CircleCheckIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width="1em"

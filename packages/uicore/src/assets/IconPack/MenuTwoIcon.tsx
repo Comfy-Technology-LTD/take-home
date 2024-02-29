@@ -1,4 +1,7 @@
-export const MenuTwoIcon = ({ ...props }) => {
+
+import { SVGAttributes } from "react"
+
+export const MenuTwoIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

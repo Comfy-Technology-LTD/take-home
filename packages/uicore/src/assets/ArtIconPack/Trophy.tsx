@@ -1,4 +1,6 @@
-export const Trophy = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const Trophy = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       {...props}

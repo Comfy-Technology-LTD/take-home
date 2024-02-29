@@ -1,4 +1,6 @@
-export const AngleArrowLeftIcon = ({ ...props }) => {
+import { SVGAttributes } from "react"
+
+export const AngleArrowLeftIcon = ({ ...props }: SVGAttributes<SVGElement>) => {
   return (
     <svg
       width="1em"
