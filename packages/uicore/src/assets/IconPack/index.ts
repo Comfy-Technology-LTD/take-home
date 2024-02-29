@@ -43,7 +43,6 @@ export * from "./LinkIcon";
 export * from "./MinusIcon";
 export * from "./WalletIcon";
 export * from "./TicketIcon";
-export * from "./PizzaIcon";
 export * from "./PencilIcon";
 export * from "./ArrowLink";
 export * from "./InformationIcon";

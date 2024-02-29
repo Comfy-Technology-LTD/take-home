@@ -6,14 +6,19 @@ module.exports = {
   ],
   theme: {
     screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
+      sm: '600px',
+      md: '900px',
+      lg: '1200px',
+      xl: '1600px',
     },
+
+    
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      bBlack: 'rgb(var(--okw-brand-black) / <alpha-value>)',
+      bPurple: 'rgb(var(--okw-brand-purple) / <alpha-value>)',
+      bGreen: 'rgb(var(--okw-brand-green) / <alpha-value>)',
       primary: 'rgb(var(--okw-color-primary) / <alpha-value>)',
       secondary: 'rgb(var(--okw-color-secondary) / <alpha-value>)',
       success: 'rgb(var(--okw-color-success) / <alpha-value>)',
