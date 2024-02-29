@@ -1,9 +1,5 @@
-
-
 const CreateClaim = () => {
-  return (
-    <div>CreateClaim</div>
-  )
-}
+  return <div>CreateClaim</div>;
+};
 
-export default CreateClaim
+export default CreateClaim;

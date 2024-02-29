@@ -1,11 +1,5 @@
-
-
 const ClaimList = () => {
-  return (
-    <div>
+  return <div></div>;
+};
 
-    </div>
-  )
-}
-
-export default ClaimList
+export default ClaimList;

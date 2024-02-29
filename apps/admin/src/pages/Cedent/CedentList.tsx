@@ -1,10 +1,5 @@
-
 const CedentList = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default CedentList
+export default CedentList;

@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import React, { ComponentProps } from "react";
 
-
 export type TextAreaProps = {
   noBorder?: boolean;
   isFullwidth?: boolean;

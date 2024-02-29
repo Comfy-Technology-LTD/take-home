@@ -1,9 +1,5 @@
-
-
 const PolicyMetrics = () => {
-  return (
-    <div>Metrics</div>
-  )
-}
+  return <div>Metrics</div>;
+};
 
-export default PolicyMetrics
+export default PolicyMetrics;

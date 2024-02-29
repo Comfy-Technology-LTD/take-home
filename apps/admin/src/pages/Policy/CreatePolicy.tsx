@@ -1,11 +1,5 @@
-
-
 const CreatePolicy = () => {
-  return (
-    <div>
+  return <div></div>;
+};
 
-    </div>
-  )
-}
-
-export default CreatePolicy
+export default CreatePolicy;

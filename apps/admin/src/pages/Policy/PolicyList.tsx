@@ -1,9 +1,5 @@
-
-
 const PolicyList = () => {
-  return (
-    <div>PolicyList</div>
-  )
-}
+  return <div>PolicyList</div>;
+};
 
-export default PolicyList
+export default PolicyList;

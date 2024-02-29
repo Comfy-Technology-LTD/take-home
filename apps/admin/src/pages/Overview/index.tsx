@@ -1,16 +1,14 @@
-
-import { Button, Input, TextArea, Spinner,} from 'uicore';
+import { Button, Input, Spinner, TextArea } from "uicore";
 
 const Overview = () => {
   return (
     <>
-     
       <Button>Submit</Button>
       <Input placeholder="Enter anything" />
       <TextArea />
       <Spinner />
     </>
-  )
-}
+  );
+};
 
-export default Overview
+export default Overview;

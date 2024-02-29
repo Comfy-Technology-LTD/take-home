@@ -1,9 +1,5 @@
-
-
 const ReinsurerList = () => {
-  return (
-    <div>ReinsurerList</div>
-  )
-}
+  return <div>ReinsurerList</div>;
+};
 
-export default ReinsurerList
+export default ReinsurerList;

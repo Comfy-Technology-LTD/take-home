@@ -1,8 +1,5 @@
-
 const Cedent = () => {
-  return (
-    <div>index</div>
-  )
-}
+  return <div>index</div>;
+};
 
-export default Cedent
+export default Cedent;

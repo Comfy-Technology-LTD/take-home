@@ -1,11 +1,5 @@
-
-
 const Policy = () => {
-  return (
-    <div>
-    
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default Policy
+export default Policy;

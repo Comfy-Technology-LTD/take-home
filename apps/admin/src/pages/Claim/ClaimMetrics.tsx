@@ -1,9 +1,5 @@
-
-
 const ClaimMetrics = () => {
-  return (
-    <div>ClaimMetrics</div>
-  )
-}
+  return <div>ClaimMetrics</div>;
+};
 
-export default ClaimMetrics
+export default ClaimMetrics;

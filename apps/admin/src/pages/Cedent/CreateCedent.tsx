@@ -1,9 +1,5 @@
-
-
 const CreateCedent = () => {
-  return (
-    <div>CreateCedent</div>
-  )
-}
+  return <div>CreateCedent</div>;
+};
 
-export default CreateCedent
+export default CreateCedent;

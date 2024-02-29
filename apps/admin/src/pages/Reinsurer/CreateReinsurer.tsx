@@ -1,8 +1,5 @@
-
 const CreateReinsurer = () => {
-  return (
-    <div>CreateReinsurer</div>
-  )
-}
+  return <div>CreateReinsurer</div>;
+};
 
-export default CreateReinsurer
+export default CreateReinsurer;
