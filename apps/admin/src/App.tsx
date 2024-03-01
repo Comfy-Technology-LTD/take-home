@@ -13,11 +13,11 @@ import Policy from "./pages/Policy";
 import CreatePolicy from "./pages/Policy/CreatePolicy";
 import PolicyList from "./pages/Policy/PolicyList";
 import PolicyMetrics from "./pages/Policy/PolicyMetrics";
+import PremiumList from "./pages/Policy/PremiumList";
 import Reinsurer from "./pages/Reinsurer";
 import CreateReinsurer from "./pages/Reinsurer/CreateReinsurer";
 import ReinsurerList from "./pages/Reinsurer/ReinsurerList";
 import Settings from "./pages/Settings";
-import PremiumList from "./pages/Policy/PremiumList";
 
 function App() {
   return (

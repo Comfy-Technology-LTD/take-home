@@ -113,7 +113,7 @@
   .lightTextColor {
     @apply text-gray-400;
   }
-  
+
   .lighterTextColor {
     @apply text-gray-300;
   }

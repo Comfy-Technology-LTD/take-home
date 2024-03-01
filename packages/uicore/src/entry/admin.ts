@@ -7,5 +7,3 @@ export * from "../components/admin/Layout/TwoSideLayout";
 export * from "../components/admin/Layout";
 export * from "../components/admin/OverviewInsightCardWrapper";
 export * from "../components/admin/InsightCard";
-
-

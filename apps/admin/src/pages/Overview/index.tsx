@@ -2,7 +2,6 @@ import { BoxOpenIcon } from "uicore";
 import { FullSidesLayout, InsightCard, OverviewInsightCardWrapper } from "uicore/admin";
 
 const Overview = () => {
-
   return (
     <>
       <FullSidesLayout>
@@ -14,9 +13,11 @@ const Overview = () => {
               title: `Total active policies`,
               Icon: <BoxOpenIcon style={{ fontSize: "24px" }} />,
               figure: 20,
-              unit: '',
+              unit: "",
               figureDetails: <>Current month</>,
-            }} statusColor={"#030712"} />
+            }}
+            statusColor={"#030712"}
+          />
 
           <InsightCard
             to="/premiumList"
@@ -25,9 +26,11 @@ const Overview = () => {
               title: `Total premium volume`,
               Icon: <BoxOpenIcon style={{ fontSize: "24px" }} />,
               figure: 10 as number,
-              unit: 'GH₵',
+              unit: "GH₵",
               figureDetails: <>Current month</>,
-            }} statusColor={"#030712"} />
+            }}
+            statusColor={"#030712"}
+          />
           <InsightCard
             to="/claim"
             isLoading={false}
@@ -35,9 +38,11 @@ const Overview = () => {
               title: `Total submitted claims`,
               Icon: <BoxOpenIcon style={{ fontSize: "24px" }} />,
               figure: 10 as number,
-              unit: '',
+              unit: "",
               figureDetails: <>Current month</>,
-            }} statusColor={"#030712"} />
+            }}
+            statusColor={"#030712"}
+          />
           <InsightCard
             to="/claim"
             isLoading={false}
@@ -45,9 +50,11 @@ const Overview = () => {
               title: `Total claims paid out`,
               Icon: <BoxOpenIcon style={{ fontSize: "24px" }} />,
               figure: 10 as number,
-              unit: '',
+              unit: "",
               figureDetails: <>Current month</>,
-            }} statusColor={"#030712"} />
+            }}
+            statusColor={"#030712"}
+          />
         </OverviewInsightCardWrapper>
       </FullSidesLayout>
     </>

@@ -19,7 +19,7 @@ export type TopNavigationProps = {
   };
   hasSubRoute?: boolean;
   handleSubRoute: () => void;
-} & ComponentProps<"div">
+} & ComponentProps<"div">;
 
 export const TopNavigation = ({
   allRoutes,
