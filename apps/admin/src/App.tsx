@@ -18,37 +18,50 @@ import Reinsurer from "./pages/Reinsurer";
 import CreateReinsurer from "./pages/Reinsurer/CreateReinsurer";
 import ReinsurerList from "./pages/Reinsurer/ReinsurerList";
 import Settings from "./pages/Settings";
+import PolicyProvider from "./context/PolicyProvider";
+import { ErrorBoundary } from "react-error-boundary";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 function App() {
+
+  const queryClient = new QueryClient()
+
+
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route element={<LayoutWrapper />}>
-            <Route path="/" element={<Overview />} />
-            <Route path="/policy" element={<Policy />}>
-              <Route path="" element={<PolicyList />} />
-              <Route path="createPolicy" element={<CreatePolicy />} />
-              <Route path="premiumList" element={<PremiumList />} />
-              <Route path="policyMetrics" element={<PolicyMetrics />} />
-            </Route>
-            <Route path="/claim" element={<Claim />}>
-              <Route path="" element={<ClaimList />} />
-              <Route path="createClaim" element={<CreateClaim />} />
-              <Route path="claimMetrics" element={<ClaimMetrics />} />
-            </Route>
-            <Route path="/reinsurer" element={<Reinsurer />}>
-              <Route path="" element={<ReinsurerList />} />
-              <Route path="createClaim" element={<CreateReinsurer />} />
-            </Route>
-            <Route path="/cedent" element={<Cedent />}>
-              <Route path="" element={<CedentList />} />
-              <Route path="createCedent" element={<CreateCedent />} />
-            </Route>
-            <Route path="/settings" element={<Settings />}></Route>
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <QueryClientProvider client={queryClient}>
+        <ErrorBoundary fallback={<div>Something went wrong</div>} >
+          <PolicyProvider>
+            <BrowserRouter>
+              <Routes>
+                <Route element={<LayoutWrapper />}>
+                  <Route path="/" element={<Overview />} />
+                  <Route path="/policy" element={<Policy />}>
+                    <Route path="" element={<PolicyList />} />
+                    <Route path="createPolicy" element={<CreatePolicy />} />
+                    <Route path="premiumList" element={<PremiumList />} />
+                    <Route path="policyMetrics" element={<PolicyMetrics />} />
+                  </Route>
+                  <Route path="/claim" element={<Claim />}>
+                    <Route path="" element={<ClaimList />} />
+                    <Route path="createClaim" element={<CreateClaim />} />
+                    <Route path="claimMetrics" element={<ClaimMetrics />} />
+                  </Route>
+                  <Route path="/reinsurer" element={<Reinsurer />}>
+                    <Route path="" element={<ReinsurerList />} />
+                    <Route path="createClaim" element={<CreateReinsurer />} />
+                  </Route>
+                  <Route path="/cedent" element={<Cedent />}>
+                    <Route path="" element={<CedentList />} />
+                    <Route path="createCedent" element={<CreateCedent />} />
+                  </Route>
+                  <Route path="/settings" element={<Settings />}></Route>
+                </Route>
+              </Routes>
+            </BrowserRouter>
+          </PolicyProvider>
+        </ErrorBoundary>
+      </QueryClientProvider>
     </>
   );
 }

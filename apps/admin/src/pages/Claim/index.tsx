@@ -1,5 +1,14 @@
-const Claim = () => {
-  return <div>index</div>;
-};
+import { ErrorBoundary } from "react-error-boundary"
 
-export default Claim;
+
+const Claim = () => {
+  return (
+    <ErrorBoundary fallback={<div>Something went wrong</div>} >
+      <div>
+
+      </div>
+    </ErrorBoundary>
+  )
+}
+
+export default Claim
