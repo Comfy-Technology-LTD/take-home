@@ -107,14 +107,13 @@
   }
 
   .deepTextColor {
-    @apply text-black dark:text-white;
+    @apply text-gray-900;
   }
 
-  /* 
   .lightTextColor {
-    @apply;
+    @apply text-gray-400;
   }
-  */
+  
   .lighterTextColor {
     @apply text-gray-300;
   }

@@ -17,6 +17,7 @@ import Reinsurer from "./pages/Reinsurer";
 import CreateReinsurer from "./pages/Reinsurer/CreateReinsurer";
 import ReinsurerList from "./pages/Reinsurer/ReinsurerList";
 import Settings from "./pages/Settings";
+import PremiumList from "./pages/Policy/PremiumList";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/policy" element={<Policy />}>
               <Route path="" element={<PolicyList />} />
               <Route path="createPolicy" element={<CreatePolicy />} />
+              <Route path="premiumList" element={<PremiumList />} />
               <Route path="policyMetrics" element={<PolicyMetrics />} />
             </Route>
             <Route path="/claim" element={<Claim />}>

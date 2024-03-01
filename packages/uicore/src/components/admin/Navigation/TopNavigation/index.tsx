@@ -1,47 +1,12 @@
 import clsx from "clsx";
-import React from "react";
+import React, { ComponentProps } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { SwitchHorinIcon } from "../../../../entry/shared";
-// import { DropDownMenu } from '../../DropDownMenu'
-// import { DropDownModalList } from '../../DropDownMenu/DropDownModalList'
-
-// import { LogOut } from '../../../../assets/IconPack/LogOut'
-// import { CogIcon } from '../../../../assets/IconPack/CogIcon'
-// import { AngleArrowDownIcon, SwitchHorinIcon } from '../../../../assets/IconPack'
 import { Button } from "../../../shared/Button";
 import { Logo } from "../.././../../assets/ArtIconPack";
 import { ProfileAvatar } from "../../ProfileAvatar";
 
-export type ShopLogoImagesType = {
-  imageUrl?: string;
-  fileId?: string;
-  dominantColor?: string;
-  width?: string;
-  height?: string;
-  createdAt?: string;
-  updatedAt?: string;
-};
-
-export type ShopBannerImagesType = {
-  imageUrl?: string;
-  fileId?: string;
-  dominantColor?: string;
-  width?: string;
-  height?: string;
-  createdAt?: string;
-  updatedAt?: string;
-};
-
-export type currentShopType = {
-  name?: string;
-  subdomain?: string;
-  about?: string;
-  shopLogoImages: ShopLogoImagesType;
-  shopBannerImages: ShopBannerImagesType[];
-};
-
-export interface TopNavigationProps extends React.HTMLAttributes<HTMLDivElement> {
-  // children?: React.ReactNode
+export type TopNavigationProps = {
   allRoutes?: {
     path: string;
     name: string;
@@ -54,7 +19,8 @@ export interface TopNavigationProps extends React.HTMLAttributes<HTMLDivElement>
   };
   hasSubRoute?: boolean;
   handleSubRoute: () => void;
-}
+} & ComponentProps<"div">
+
 export const TopNavigation = ({
   allRoutes,
   userDetails,
@@ -87,38 +53,6 @@ export const TopNavigation = ({
           </div>
           <div className={"flex gap-2.5 items-center"}>
             <ProfileAvatar size="cvSmall" src={userDetails?.photo} alt="avatar" />
-            {/* <DropDownMenu
-              clickContent={<><AngleArrowDownIcon /></>}
-            >
-              <div className={styles.modalUserDetails}>
-                <span className={styles.username}>
-                  {
-                    userDetails.username
-                  }
-                </span>
-                <span className={styles.phoneNumber}>
-                  {
-                    userDetails.phoneNumber
-                  }
-                </span>
-              </div>
-              <div>
-
-              </div> */}
-            {/* <DropDownModalList
-
-                optionList={[
-                  {
-                    name: "Settings",
-                    icon: <CogIcon style={{ fontSize: "24px" }} />
-                  },
-                  {
-                    name: "Logout",
-                    icon: <LogOut style={{ fontSize: "24px" }} />
-                  },
-
-                ]} onListSelect={() => { }} />
-            </DropDownMenu> */}
           </div>
         </div>
         <div

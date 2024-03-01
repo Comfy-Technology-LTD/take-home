@@ -6,10 +6,23 @@ module.exports = {
   ],
   theme: {
     screens: {
-      sm: '600px',
-      md: '900px',
-      lg: '1200px',
-      xl: '1600px',
+     
+      '3xl': {'max': '1800px'},
+      // => @media (max-width: 1535px) { ... }
+
+      '2xl': {'max': '1500px'},
+      // => @media (max-width: 1279px) { ... }
+
+      'xl': {'max': '1200px'},
+      // => @media (max-width: 1023px) { ... }
+
+      'lg': {'max': '900px'},
+      // => @media (max-width: 767px) { ... }
+
+      'md': {'max': '600px'},
+      // => @media (max-width: 639px) { ... }
+      'sm': {'max': '440px'},
+      // => @media (max-width: 639px) { ... }
     },
 
     
@@ -49,7 +62,7 @@ module.exports = {
       borderColor: {
         "dark": "#030712",
         "light": "#f3f4f6",
-        "gray": "#9ca3af",
+        "gray": "#d1d5db",
       }
     }
   },
