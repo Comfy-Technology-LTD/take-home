@@ -1,30 +1,84 @@
-# React + TypeScript + Vite
+# Admin: Reinsurance Broking Platform - ReactJS Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Responsive ReactJS application for a reinsurance broking platform, focusing on insurance policy management features. Utilize TypeScript, GraphQL, TailwindCSS, GitHub & Git. It has one main application.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Broking platform for the organization
 
-## Expanding the ESLint configuration
+### Folder Structure (admin)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. `src` contains the source code
+2. `pages` contains the various pages
+3. `components` contains mostly layout wrapper components
+4. `lib` contain mostly data sources eg. utils, hooks, reducers
 
-- Configure the top-level `parserOptions` property like this:
+### How to run the project
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+1. Clone the repo
+2. Run `yarn install` to install all dependencies
+3. Download [Turborepo](https://turbo.build/) and install globally
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### Commands to run admin application in dev
+
+1. apps/admin `yarn dev`
+2. / `yarn ad:dev`
+
+#### The command to build the project
+
+1. admin `yarn ad:bld`
+2. All applications `yarn turbo:build`
+
+---
+
+## Assignment Objectives
+
+Develop a responsive ReactJS application for a reinsurance broking platform, focusing on insurance policy management features. Utilize TypeScript, GraphQL, TailwindCSS, GitHub & Git.
+
+## Task Overview
+
+Create, update, and delete insurance policies, implement document generation (PDF and Excel), and design an intuitive UI.
+
+## Task Details and Description
+
+### 1. Insurance Policy Dashboard
+
+- Develop a dashboard for key metrics.
+- Implement navigation for insurance policy management.
+
+### 2. Insurance Policy CRUD Operations
+
+- Create, update, and delete insurance policies using GraphQL queries.
+
+### 3. Document Generation
+
+- Implement functionality to generate PDF and Excel documents.
+- Enable navigation to view and download generated documents.
+
+### 4. User Interface
+
+- Design a visually appealing UI with TailwindCSS for smooth policy management and document generation.
+
+## Error Handling
+
+Ensure robust error handling and consider edge cases for insurance policy operations and document generation.
+
+## Documentation and Code Structure
+
+Maintain clear and comprehensive documentation in the README.
+Ensure well-organized code structure adhering to best practices.
+
+## Submission Instructions
+
+Utilize Git for version control and submit the project on GitHub.
+Include a detailed README for setup instructions, task overview, and project structure.
+
+## Evaluation Criteria
+
+- Evaluate code quality, structure, and adherence to best practices.
+- Assess TypeScript usage for static typing.
+- Review GraphQL implementation for data interactions.
+- Examine UI design using TailwindCSS for policy management and document generation.
+- Check for effective error handling and consideration of edge cases.
+- Inspect Git commit history for incremental development.
+- Evaluate README completeness and clarity in providing setup instructions and project overview.

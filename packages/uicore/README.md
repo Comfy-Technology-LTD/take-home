@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# UI Core: Reinsurance Broking Platform - ReactJS Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+UI components built in isolation. This can be shared in all your applications without installing. It can be bundled and shared with external applications
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Broking platform for the organization
 
-## Expanding the ESLint configuration
+### Folder Structure (Monorepo)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. `src` contains the source code
+2. `assets` contains svg icons and images
+3. `components` contains shared and application specific components
+4. `lib` contain mostly data sources eg. utils, hooks.
 
-- Configure the top-level `parserOptions` property like this:
+### How to run the project
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
+1. Clone the repo
+2. Run `yarn install` to install all dependencies
+3. Download [Turborepo](https://turbo.build/) and install globally
+
+#### Commands to run admin application in dev
+
+1. The uicore is not built manually before used locally.
+   `react vite` by default transpile the source code.
+
+2. `Nextjs` The uicore is not built manually before used locally.
+   Add
+
+```javascrpt
+transpilePackages: [<package-name>],
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+to your nextjs configuation file.
+
+#### The command to build the project
+
+1. admin `yarn up:bld`
+2. All applications `yarn turbo:build`

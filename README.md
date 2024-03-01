@@ -1,6 +1,53 @@
-# Reinsurance Broking Platform - ReactJS Application
+# Reinsurance Broking Platform
 
-## Objectives
+## Description
+
+Responsive ReactJS application for a reinsurance broking platform, focusing on insurance policy management features. Utilize TypeScript, GraphQL, TailwindCSS, GitHub & Git. It has one main application.
+
+1. Broking platform for the organization 
+
+## Technical Details
+
+### Technologies used:
+
+1. [Vite React](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
+2. [Storybook ](https://storybook.js.org/) for component development
+3. [Turborepo](https://turbo.build/) for monorepo management
+
+### Folder Structure (Monorepo)
+
+1. `apps` contains the frontends
+2. `packages` contains the shared components, utils and storybook preview
+4. `apps/admin` contains the admin application
+5. `apps/uipreview` storybook preview for the shared components
+6. `packages/uicore` contains the shared components
+
+### How to run the project
+
+1. Clone the repo
+2. Run `yarn install` to install all dependencies
+3. Download [Turborepo](https://turbo.build/) and install globally  
+
+#### Commands to run each application in dev
+
+1. apps/admin `yarn dev`
+2. apps/uipreview `yarn dev`
+3. All applications `yarn turbo:dev`
+
+#### The command to build the project
+
+1. admin `yarn ad:bld`
+2. uipreview ` yarn up:bld`
+3. All applications `yarn turbo:build`
+
+
+
+
+
+
+-----------------------
+
+## Assignment Objectives
 Develop a responsive ReactJS application for a reinsurance broking platform, focusing on insurance policy management features. Utilize TypeScript, GraphQL, TailwindCSS, GitHub & Git.
 
 ## Task Overview

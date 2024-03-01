@@ -26,11 +26,14 @@
     "turbo:lint": "turbo run lint",
     "turbo:format": "turbo run format",
     "turbo:dev": "turbo run dev",
+    "turbo:build": "turbo run build",
     "up:tsc": "yarn workspace uipreview run typecheck",
 		"ad:tsc": "yarn workspace admin run typecheck",
 		"ui:tsc": "yarn workspace uicore run typecheck",
     "up:dev": "yarn workspace uipreview run dev",
-		"ad:dev": "yarn workspace admin run dev"
+		"ad:dev": "yarn workspace admin run dev",
+    "up:bld": "yarn workspace uipreview run build",
+		"ad:bld": "yarn workspace admin run build"
   },
   "workspaces": [
     "apps/*",
