@@ -1,0 +1,32 @@
+{
+  "name": "uicore",
+  "private": true,
+  "version": "0.0.0",
+  "exports": {
+    ".": [
+      "./src/entry/shared.ts",
+      "./src/styles/globals.css"
+    ],
+    "./client": [
+      "./src/entry/client.ts"
+    ],
+    "./admin": [
+      "./src/entry/admin.ts"
+    ]
+  },
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "typecheck": "tsc  --noEmit",
+    "format": "prettier --write ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@serverless-guru/prettier-plugin-import-order": "^0.4.2"
+  },
+  "peerDependencies": {
+    "browser-image-compression": "^2.0.2",
+    "clsx": "^1.2.1",
+    "react-router-dom": "^6.11.0"
+  }
+}

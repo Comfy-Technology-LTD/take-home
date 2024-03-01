@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* margin: 0;
+  padding: 0; */
+    /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+    font-family: "Montserrat", sans-serif;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    /* background: rgb(241, 241, 241); */
+    /* transition: all 250ms ease; */
+  }
+
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--okw-black-accent-color);
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+
+  :root {
+    --okw-brand-black: 0 0 0;
+    --okw-brand-purple: 195 0 176;
+    --okw-brand-green: 62 255 81;
+
+    --okw-color-primary: 0 0 0;
+    --okw-color-secondary: 195 0 176;
+    --okw-color-error: 255 62 62;
+    --okw-color-success: 62 255 81;
+    --okw-color-disabled: 208 208 208;
+
+    /* attention colors */
+    --okw-success-color: #569046;
+    --okw-success-bg-color: #e0f7df;
+    --okw-info-color: #948043;
+    --okw-info-bg-color: #fcf5db;
+    --okw-error-color: #972f38;
+    --okw-error-bg-color: #f4d6d6;
+
+    /* dark colors*/
+    --okw-dark-text-color1: 55 55 55;
+    --okw-dark-text-color2: 100 100 100;
+
+    /* Light colors*/
+    --okw-light-text-color1: 255 255 255;
+    --okw-light-text-color2: 193 193 193;
+
+    --okw-black-light-accent-color2: #00000069;
+    --okw-black-accent-color: #000000;
+
+    --okw-purple-light-accent-color2: #c300b063;
+    --okw-purple-accent-color: #c300b0;
+
+    --okw-green-light-accent-color2: #3eff516d;
+    --okw-green-accent-color: #3eff51;
+
+    /* Border sizes */
+    --okw-border-radius-lg: 30px;
+    --okw-border-radius-md: 20px;
+    --okw-border-radius-sm: 15px;
+    --okw-border-radius-vsm: 10px;
+    --okw-border-radius-rd: 50%;
+
+    /*sizes */
+    --okw-font-size-10: 10px;
+    --okw-font-size-12: 12px;
+    --okw-font-size-14: 14px;
+    --okw-font-size-16: 16px;
+    --okw-font-size-18: 18px;
+    --okw-font-size-20: 20px;
+
+    /*  */
+  }
+}
+
+@layer components {
+  .bgColor {
+    @apply bg-white dark:black;
+  }
+
+  .coverBgColor {
+    @apply bg-gray;
+  }
+
+  .iconCoverBgColor {
+    @apply bg-gray-800/10;
+  }
+
+  .deepTextColor {
+    @apply text-gray-900;
+  }
+
+  .lightTextColor {
+    @apply text-gray-400;
+  }
+
+  .lighterTextColor {
+    @apply text-gray-300;
+  }
+}
