@@ -106,6 +106,10 @@
     @apply bg-gray;
   }
 
+  .iconCoverBgColor {
+    @apply bg-gray-800/10;
+  }
+
   .deepTextColor {
     @apply text-gray-900;
   }

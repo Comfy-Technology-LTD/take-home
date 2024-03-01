@@ -57,7 +57,7 @@ export const TopNavigation = ({
         </div>
         <div
           className={
-            "flex w-full gap-[15px] items-center h-12 overflow-x-auto overflow-y-hidden pl-[30px] pr-0 py-0"
+            "flex w-full gap-[15px] items-center h-12 overflow-x-auto overflow-y-hidden pl-[20px] pr-0 py-0"
           }
         >
           {pathname !== "/" && (
