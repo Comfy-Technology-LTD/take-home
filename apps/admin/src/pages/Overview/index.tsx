@@ -5,7 +5,7 @@ import { FullSidesLayout, InsightCard, OverviewInsightCardWrapper } from "uicore
 const Overview = () => {
   return (
     <>
-      <ErrorBoundary fallback={<div>Something went wrong</div>} >
+      <ErrorBoundary fallback={<div>Something went wrong</div>}>
         <FullSidesLayout>
           <OverviewInsightCardWrapper>
             <InsightCard
@@ -59,10 +59,9 @@ const Overview = () => {
             />
           </OverviewInsightCardWrapper>
         </FullSidesLayout>
-
       </ErrorBoundary>
-      </>
-      );
+    </>
+  );
 };
 
-      export default Overview;
+export default Overview;

@@ -1,4 +1,4 @@
-export const GET_ALL_ORDERS = /* GraphQL */`
+export const GET_ALL_ORDERS = /* GraphQL */ `
   query GetAllPolicy($getAllPolicyInput: GetAllPolicyInput) {
     getAllPolicy(getAllPolicyInput: $getAllPolicyInput) {
       data {

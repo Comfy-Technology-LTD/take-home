@@ -1,6 +1,9 @@
 import "./App.css";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ErrorBoundary } from "react-error-boundary";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LayoutWrapper from "./components/LayoutWrapper";
+import PolicyProvider from "./context/PolicyProvider";
 import Cedent from "./pages/Cedent";
 import CedentList from "./pages/Cedent/CedentList";
 import CreateCedent from "./pages/Cedent/CreateCedent";
@@ -18,19 +21,14 @@ import Reinsurer from "./pages/Reinsurer";
 import CreateReinsurer from "./pages/Reinsurer/CreateReinsurer";
 import ReinsurerList from "./pages/Reinsurer/ReinsurerList";
 import Settings from "./pages/Settings";
-import PolicyProvider from "./context/PolicyProvider";
-import { ErrorBoundary } from "react-error-boundary";
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 function App() {
-
-  const queryClient = new QueryClient()
-
+  const queryClient = new QueryClient();
 
   return (
     <>
       <QueryClientProvider client={queryClient}>
-        <ErrorBoundary fallback={<div>Something went wrong</div>} >
+        <ErrorBoundary fallback={<div>Something went wrong</div>}>
           <PolicyProvider>
             <BrowserRouter>
               <Routes>

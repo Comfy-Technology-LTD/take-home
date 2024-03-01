@@ -1,29 +1,28 @@
-import { createContext, ReactNode, useContext, useReducer } from "react"
+import { ReactNode, createContext, useContext, useReducer } from "react";
 import {
-  policyReducer,
-  policyInitialData,
-  PolicyDataType,
   PolicyActions,
-
-} from "../lib/reducers/policyReducer"
+  PolicyDataType,
+  policyInitialData,
+  policyReducer,
+} from "../lib/reducers/policyReducer";
 
 interface PolicyProviderProps {
-  children?: ReactNode
+  children?: ReactNode;
 }
 
 type PolicyContextType = {
-  policyState: PolicyDataType
-  policyDispatch: React.Dispatch<PolicyActions>
-}
-const PolicyContext = createContext<PolicyContextType | null | string>("")
+  policyState: PolicyDataType;
+  policyDispatch: React.Dispatch<PolicyActions>;
+};
+const PolicyContext = createContext<PolicyContextType | null | string>("");
 
-/* eslint-disable import/react-refresh */
+/* eslint-disable react-refresh/only-export-components */
 export const usePolicyProvider = () => {
-  return useContext(PolicyContext) as PolicyContextType
-}
+  return useContext(PolicyContext) as PolicyContextType;
+};
 
 const PolicyProvider = ({ children }: PolicyProviderProps) => {
-  const [state, dispatch] = useReducer(policyReducer, policyInitialData)
+  const [state, dispatch] = useReducer(policyReducer, policyInitialData);
 
   return (
     <>
@@ -36,7 +35,7 @@ const PolicyProvider = ({ children }: PolicyProviderProps) => {
         {children}
       </PolicyContext.Provider>
     </>
-  )
-}
+  );
+};
 
-export default PolicyProvider
+export default PolicyProvider;

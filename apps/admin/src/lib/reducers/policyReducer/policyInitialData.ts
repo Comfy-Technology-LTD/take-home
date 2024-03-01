@@ -15,23 +15,22 @@ export type PolicyType = {
   endDate: string;
   createdAt: string;
   updatedAt: string;
-}
+};
 
 export interface CedentDataType {
-  id: string 
+  id: string;
   username: string;
   phoneNumber: string;
   email: string;
 }
 
 export interface ReinsurerDataType {
-  id: string 
+  id: string;
   username: string;
   phoneNumber: string;
   email: string;
-  share: number
+  share: number;
 }
-
 
 /**
  * @description PolicyDataType
